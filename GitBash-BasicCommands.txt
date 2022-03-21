@@ -1,0 +1,27 @@
+Basic Git Bash Commands
+
+git init						-- initializes Git repository in a chosen folder
+git config --global user.name '<name>'	-- assigns name to repository
+git config --global user.email '<email>'	-- assigns email address to repository
+touch <filename.extension>			-- creates a file in the specified folder
+add <filename.extension>			-- adds file to staging area pre-commit
+git status						-- shows status of staging area
+git rm --cached <filename.extension>	-- removes file from staging area
+git add *.<extension>				-- adds all files in folder with the specified extension
+git add .						-- adds all files in folder to staging area
+git commit	(press i for *insert*, then type comment; press esc to escape insert mode, type ":wq" to commit for Vim)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Note: Must re-add file to staging area if it is edited (don't need to remove)
+	and it must be committed again with a comment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git commit -m '<comment>'			-- shortcut commit command that includes comment
+clear							-- clears command line
+touch .gitignore					-- Add files to .gitignore that should not get added
+git branch <branch name>			-- creates a new branch in repo with branch name
+git checkout <branch name>			-- switches current branch to 'branch name' for committing to this branch
+git merge <branch name>				-- merges 'branch name' to the main branch
+git remote add origin <.git URL>		-- adds this repository to github
+git push origin <branch name>
+git pull origin <branch name>
+git clone <.git URL>
